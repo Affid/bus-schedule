@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation"
+    app:startDestination="@id/selection">
+
+    <fragment
+        android:id="@+id/selection"
+        android:name="com.myrtle.busschedule.SelectionFragment"/>
+    <fragment
+        android:id="@+id/bus"
+        android:name="com.myrtle.busschedule.BusSchedule"
+        android:label="BusSchedule"/>
+    <fragment
+        android:id="@+id/train"
+        android:name="com.myrtle.busschedule.TrainFragment"
+        android:label="TrainFragment" />
+
+</navigation>
