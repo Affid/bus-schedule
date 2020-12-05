@@ -3,4 +3,17 @@
     <string name="bus">Автобусы</string>
     <string name="selection">Подбор</string>
     <string name="trains">Электрички</string>
+
+    <string name="today">Сегодня</string>
+    <string name="tomorrow">Завтра</string>
+    <string name="dubki">Дубки</string>
+    <string name="odincovo">Одинцово</string>
+    <string name="movement">Отправление в </string>
+    <string name="question"> bus_info </string>
+    <string name="bus_info">Здесь список автобусов (подробно расписать) </string>
+    <string name="pointer"> > </string>
+    <string name="string_pointer">pointr</string>
+    <string name="get_bus_calendar">bus_calendar</string>
+    <string name="button_from_odincovo_to_dubki">button_from_odincovo_to_dubki</string>
+    <string name="button_from_dubki_to_odincovo">button_from_dubki_to_odincovo</string>
 </resources>
