@@ -70,8 +70,8 @@ public final class Train {
     @NotNull
     @Override
     public String toString() {
-        return "Train{" +
-                "departure station='" + getDepartureStation() + '\''
+        return "Train{"
+                +"departure station='" + getDepartureStation() + '\''
                 +", departure='" + departure.toString() + '\''
                 +", arrival station='" + getArrivalStation() + '\''
                 +", arrival='" + arrival.toString() + '\''
