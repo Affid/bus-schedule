@@ -71,11 +71,11 @@ public final class Train {
     @Override
     public String toString() {
         return "Train{" +
-                "departure station='" + getDepartureStation() + '\'' +
-                ", departure='" + departure.toString() + '\'' +
-                ", arrival station='" + getArrivalStation() + '\'' +
-                ", arrival='" + arrival.toString() + '\'' +
-                '}';
+                "departure station='" + getDepartureStation() + '\''
+                +", departure='" + departure.toString() + '\''
+                +", arrival station='" + getArrivalStation() + '\''
+                +", arrival='" + arrival.toString() + '\''
+                +'}';
     }
 
     public Station getDepartureStation() {

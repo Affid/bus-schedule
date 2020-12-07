@@ -47,10 +47,10 @@ public class Bus implements Comparable<Bus> {
     @NotNull
     @Override
     public String toString() {
-        return "Bus{" +
-                "departure='" + departure + '\'' +
-                ", direction=" + direction +
-                '}';
+        return "Bus{"
+                +"departure='" + departure + '\''
+                +", direction=" + direction
+                +'}';
     }
 
     @Override
