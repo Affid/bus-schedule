@@ -5,7 +5,7 @@ import org.jetbrains.annotations.NotNull;
 /**
  * Класс, описывающий электричку.
  */
-public class Train {
+public final class Train {
     private final Time departure;
     private final Time arrival;
     private final Direction direction;

@@ -1,9 +1,5 @@
 package com.myrtle.busschedule.domain.entities;
 
-import android.util.Log;
-
-import java.text.SimpleDateFormat;
-import java.time.format.DateTimeFormatter;
 import java.util.Collections;
 import java.util.GregorianCalendar;
 
@@ -23,7 +19,7 @@ import java.util.Locale;
 /**
  * Класс, осуществляющий сопоставление автобусов и электричек.
  */
-public class Selector {
+public final class Selector {
     private final Direction direction;
     private final ArrayList<Bus> buses;
     private final ArrayList<Train> trains;
@@ -123,9 +119,9 @@ public class Selector {
     }
 
     private static JSONArray getBus(Direction direction, String day) throws JSONException, IOException {
-        URL url = new URL("https://busschedule-c253d.firebaseio.com/" +
-                day +
-                (direction != null ? "/" + direction.name().toLowerCase() : "") + ".json");
+        URL url = new URL("https://busschedule-c253d.firebaseio.com/"
+                +day
+                +(direction != null ? "/" + direction.name().toLowerCase() : "") + ".json");
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
         con.setRequestMethod("GET");
@@ -143,9 +139,9 @@ public class Selector {
     }
 
     private static ArrayList<Train> checkTrains(String date, Station stationFrom, Station stationTo, int offset) throws IOException, JSONException {
-        URL url = new URL(String.format(Locale.ENGLISH, "https://api.rasp.yandex.net/v3.0/search/?" +
-                        "apikey=9f256970-436a-4fae-8cd6-31080528d277&format=json" +
-                        "&from=%s&to=%s&lang=ru_RU&offset=%d&date=%s",
+        URL url = new URL(String.format(Locale.ENGLISH, "https://api.rasp.yandex.net/v3.0/search/?"
+                        + "apikey=9f256970-436a-4fae-8cd6-31080528d277&format=json"
+                        +"&from=%s&to=%s&lang=ru_RU&offset=%d&date=%s",
                 stationFrom.getId(), stationTo.getId(), offset, date));
         HttpURLConnection con = (HttpURLConnection) url.openConnection();
 
